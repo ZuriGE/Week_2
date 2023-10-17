@@ -12,4 +12,3 @@ gente.people.push(persona2)
 gente.printPersons()
 
 
-
