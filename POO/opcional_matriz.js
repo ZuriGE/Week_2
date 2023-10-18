@@ -19,24 +19,23 @@ class Matrix {
         let result;
         let condit = true;
         let mSum = m.myMatrix
-    
-        console.log(this.myMatrix.length);
-        console.log( mSum.length);
-
-
-        if (mSum.length == this.myMatrix.length){
-            result = [];
-            this.myMatrix.forEach((vector, index)=>{
-                mSum[index].__proto__ = classVector.prototype;
-                vector.__proto__ = classVector.prototype;
-               mSum[index].add(vector)
-            })
-        }else{
-            result = 'no se cumplen las condiciones'
-        }
-        !condit ? result = 'no se cumplen las condiciones': result
-        return result
     }
+
+
+
+    //     if (mSum.length == this.myMatrix.length){
+    //         result = [];
+    //         this.myMatrix.forEach((vector, index)=>{
+    //             mSum[index].__proto__ = classVector.prototype;
+    //             vector.__proto__ = classVector.prototype;
+    //            mSum[index].add(vector)
+    //         })
+    //     }else{
+    //         result = 'no se cumplen las condiciones'
+    //     }
+    //     !condit ? result = 'no se cumplen las condiciones': result
+    //     return result
+    // }
     
     // //ProductoNumeroMatriz(n, m): Multiplica la matriz m por el numero n.
     
