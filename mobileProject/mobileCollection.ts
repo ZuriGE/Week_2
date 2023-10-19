@@ -7,6 +7,12 @@ export class MobileCollection {
 
     constructor (mobiles:Mobile[]){
         this.mobiles = mobiles;
+        this.totalPrice =this.totalPriceCalculation()
+    }
+
+    private totalPriceCalculation():number{
+        let totPrice:number =  this.mobiles.reduce((totPrice, mobile)=> totPrice += mobile.getPrice(), 0)
+        return totPrice
     }
 
     public getMobiles():Mobile[]{
