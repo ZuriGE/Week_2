@@ -35,7 +35,7 @@ function add(myWords:string[]):number{
 
 evenNumbers(13);
 
-let arrColores = ['VERDE','negro','Violeta'];
+let arrColores = ['VERDE','negro','Violeta','blanco'];
 
 console.log(myRevert(arrColores));
 
