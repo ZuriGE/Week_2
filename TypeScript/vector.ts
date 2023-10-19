@@ -1,11 +1,9 @@
 export class Vector {
     private elements:number[];
 
-    // private n:number; //no lo pide el enunciado pero lo necesito para la suma
-   
+       
     constructor(n:number, k:number){
         this.elements = this.genVector(n,k)
-        // this.n = n
     }
     
     private genVector(n:number, k:number):number[] {
@@ -18,6 +16,14 @@ export class Vector {
 
     public print():void{
         console.log(this.elements)
+    }
+    
+    public getElements():number[]{
+        return this.elements
+    }
+
+    public setElements(newElements:number[]):void{
+        this.elements = newElements
     }
 
     // add, subs y mult devuelven la suma/resta/multiplicación si los vectores tienen la misma dimensión, en caso contrario devuelve el vector inicial sin sumar/restar/multiplicar por nada (no puede devolver un string de 'ERROR')
@@ -34,8 +40,8 @@ export class Vector {
 
     public subs(v1:Vector){   
         let result:Vector = new Vector (this.elements.length, 0)   
-        if (v1.elements.length == this.elements.length){
-            let auxVec:number[] = this.elements.map((value:number,i:number) => value - v1.elements[i])
+        if (v1.getElements().length == this.elements.length){
+            let auxVec:number[] = this.elements.map((value:number,i:number) => value - v1.getElements()[i])
             result.elements = [...auxVec]
         }else{
             result.elements = [...this.elements]
@@ -60,6 +66,8 @@ export class Vector {
         result.elements = [...auxVec]
         return result       
     }
+
+
 
 }
 
