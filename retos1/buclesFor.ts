@@ -7,7 +7,7 @@ function evenNumbers(num:number):void{
 
 //revertir array
 function myRevert(myArr:string[]):string[]{
-    let revArr = [];
+    let revArr:string[] = [];
     for (let i:number = myArr.length-1; i>=0;i--){
         revArr.push(myArr[i]);
     }
@@ -23,7 +23,7 @@ function isRainbow(colors:string[]):void{
     }
 }
 
-function add(myWords:string[]):number{
+export function add(myWords:string[]):number{
     let suma:number = 0;
     for (let word of myWords){
         suma += word.length;
@@ -33,12 +33,13 @@ function add(myWords:string[]):number{
 
 //PRUEBAS
 
-evenNumbers(13);
+// evenNumbers(13);
 
-let arrColores = ['VERDE','negro','Violeta','blanco'];
+// let arrColores = ['VERDE','negro','Violeta','blanco'];
 
-console.log(myRevert(arrColores));
+// console.log(myRevert(arrColores));
 
-isRainbow(arrColores);
+// isRainbow(arrColores);
 
-console.log(add(arrColores));
+// console.log(add(arrColores));
+

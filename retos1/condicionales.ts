@@ -123,7 +123,7 @@ function continent(country:string):void{
 
 //PAR o IMPAR
 
-function isEven(number):string{
+export function isEven(number):string{
     let resultado:string;
     number % 2 == 0 ? resultado='El numero es par' : resultado='El numero es impar';
     console.log(resultado);
