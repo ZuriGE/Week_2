@@ -147,4 +147,4 @@ console.log(zodiac(6,74));
 console.log(zodiac(21,11));
 console.log(zodiac(15,12));
 console.log(zodiac(22,5));
-/*
+*/
