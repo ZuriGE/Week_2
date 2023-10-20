@@ -37,5 +37,23 @@ export class Point{
         return Math.sqrt((this.x-x2)*(this.x-x2)+(this.y-y2)*(this.y-y2))
     }
 
+    public calculateQuadrant():number{
+        let quad:number = 0
+        switch (true){
+            case (this.x > 0 && this.y > 0):
+                quad = 1;
+                break;
+            case (this.x < 0 && this.y > 0):
+                quad = 2;
+                break;
+            case (this.x < 0 && this.y < 0):
+                quad = 3;
+                break;
+            case (this.x > 0 && this.y < 0):
+                quad = 4;
+                break;
+        }
+        return quad
+    }
 
 }
