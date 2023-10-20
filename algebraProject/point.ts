@@ -56,4 +56,9 @@ export class Point{
         return quad
     }
 
+    public calculateNearest(points : Point[]) : Point{
+        return points.reduce((accum, actual) => this.calculateDistance(accum) <  this.calculateDistance(actual) ? accum : actual)
+    }
+
+
 }
