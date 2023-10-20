@@ -29,4 +29,13 @@ export class MobileCollection {
         this.totalPrice=NewTotalPrice
     }
 
+    public printCollection():void{
+        console.log(`This is all my mobiles:\n`)
+        this.mobiles.forEach((mobile, i)=> {
+            mobile.printAll()
+            console.log(`\n`)
+        })
+        console.log(`....................\nPrice overall: ${this.totalPrice}`)
+    }
+
 }

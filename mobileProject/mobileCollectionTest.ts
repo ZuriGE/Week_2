@@ -16,6 +16,8 @@ console.log(myCollection.getMobiles())
 myCollection.setMobiles(newArray)
 console.log(myCollection.getMobiles())
 
-// myCollection.setTotalPrice(499+299+2*249)
+// myCollection.setTotalPrice(1200)
 
 console.log(myCollection.getTotalPrice())
+
+myCollection.printCollection()
