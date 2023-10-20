@@ -10,3 +10,12 @@ coordOrigin.setX(-10)
 coordOrigin.setY(10)
 
 console.log(coordOrigin.toString());
+
+let point1 = new Point (2,0)
+let point2 = new Point(0,-9)
+let point3 = new Point(-8,3)
+let point4 = new Point(5,1)
+
+console.log(point1.distanceToOrigin())
+console.log(point2.distanceToOrigin())
+console.log(point3.calculateDistance(point4))
